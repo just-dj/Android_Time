@@ -1,0 +1,41 @@
+<resources>
+	
+	<!-- Base application theme. -->
+	<style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+		<!-- Customize your theme here. -->
+		
+		<!--actionbar-->
+		<item name="colorPrimary">@color/colorPrimary</item>
+		<!--actionbar字体颜色-->
+		<!--<item name="android:textColorPrimary"></item>-->
+		
+		<!--状态栏-->
+		<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+		
+		<!--控件选中状态颜色-->
+		<item name="colorAccent">@color/colorPrimaryDark</item>
+		
+		<item name="android:windowTranslucentStatus">true</item>
+		
+	</style>
+	
+	<style name="editActivityTheme" parent="AppTheme">
+		<item name="android:windowTranslucentStatus">true</item>
+	</style>
+	
+	
+	<style name="MyDialogStyleBottom" parent="AppTheme">
+		<item name="android:windowFrame">@null</item>
+		<!-- 是否浮现在activity之上 -->
+		<item name="android:windowIsFloating">true</item>
+		<!-- 半透明 -->
+		<item name="android:windowIsTranslucent">true</item>
+		<!-- 无标题 -->
+		<item name="android:windowNoTitle">true</item>
+		<!-- 背景透明 -->
+		<item name="android:windowBackground">@android:color/transparent</item>
+		<!-- 模糊 -->
+		<item name="android:backgroundDimEnabled">true</item>
+	</style>
+	
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  xmlns:app="http://schemas.android.com/apk/res-auto"
+			  android:orientation="vertical"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent">
+	
+	
+	<android.support.v7.widget.Toolbar
+			android:id="@+id/toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="30dp"
+			android:background="?attr/colorPrimaryDark"
+			android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+			app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+			android:weightSum="1"
+			app:contentInsetStart="0dp">
+		
+		<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:paddingLeft="10dp"
+				android:paddingRight="10dp">
+			
+			<ImageView
+					android:id="@+id/search"
+					android:background="@drawable/search"
+					android:layout_width="20dp"
+					android:layout_height="20dp"
+					android:layout_alignParentLeft="true"
+					android:layout_centerInParent="true"/>
+			
+			
+			<TextView
+					android:gravity="center"
+					android:id="@+id/myspinner"
+					android:layout_width="150dp"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:background="@color/colorPrimaryDark"
+					android:textColor="@color/white"
+					android:layout_centerInParent="true"
+					android:maxLines="1"
+					android:maxEms="10"
+					android:text="全部"
+					android:textSize="15dp"/>
+			
+			<ImageView
+					android:id="@+id/edit"
+					android:background="@drawable/edit"
+					android:layout_width="20dp"
+					android:layout_height="20dp"
+					android:layout_alignParentRight="true"
+					android:layout_centerInParent="true"/>
+		
+		</RelativeLayout>
+	
+	</android.support.v7.widget.Toolbar>
+	
+	<LinearLayout
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			xmlns:app="http://schemas.android.com/apk/res-auto"
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+		
+		<android.support.v7.widget.RecyclerView
+				android:id="@+id/article_list"
+				android:background="#EFF4F7"
+				android:layout_alignParentTop="true"
+				android:layout_centerInParent="true"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_weight="1">
+		</android.support.v7.widget.RecyclerView>
+		
+	
+	</LinearLayout>
+	
+</LinearLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:background="@color/colorPrimaryDark"
+		android:fitsSystemWindows="true"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+	
+	<android.support.v7.widget.Toolbar
+			android:id="@+id/toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="35dp"
+			android:background="?attr/colorPrimaryDark"
+			android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+			app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+			android:weightSum="1"
+			app:contentInsetStart="0dp">
+		
+		<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:paddingLeft="10dp"
+				android:paddingRight="10dp">
+			
+			<TextView
+					android:id="@+id/returnKindEdit"
+					android:text="取消"
+					android:textColor="@color/white"
+					android:layout_width="wrap_content"
+					android:layout_height="20dp"
+					android:layout_alignParentLeft="true"
+					android:layout_centerInParent="true"/>
+			
+			
+			<TextView
+					android:gravity="center"
+					android:layout_width="150dp"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:background="@color/colorPrimaryDark"
+					android:textColor="@color/white"
+					android:layout_centerInParent="true"
+					android:maxLines="1"
+					android:maxEms="10"
+					android:text="编辑分类"
+					android:textSize="15dp"/>
+			
+			<TextView
+					android:id="@+id/complateKindEdit"
+					android:text="完成"
+					android:textColor="@color/white"
+					android:layout_width="wrap_content"
+					android:layout_height="20dp"
+					android:layout_alignParentRight="true"
+					android:layout_centerInParent="true"/>
+			
+		</RelativeLayout>
+	
+	</android.support.v7.widget.Toolbar>
+	
+	<LinearLayout
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			xmlns:app="http://schemas.android.com/apk/res-auto"
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+		
+		<LinearLayout
+				android:paddingTop="3dp"
+				android:paddingBottom="3dp"
+				android:paddingLeft="10dp"
+				android:background="#EFF4F7"
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="46dp">
+			
+			<EditText
+					android:id="@+id/kindEditNow"
+					android:textCursorDrawable="@drawable/color_cursor"
+					android:paddingLeft="10dp"
+					android:textSize="19dp"
+					android:gravity="center|left"
+					android:background="@color/white"
+					android:layout_gravity="center"
+					android:layout_weight="1"
+					android:maxLines="1"
+					android:maxLength="12"
+					android:layout_width="match_parent"
+					android:layout_height="40dp"/>
+			
+			<ImageView
+					android:id="@+id/kind_add"
+					android:background="@drawable/kind_add"
+					android:layout_gravity="right|center"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:layout_width="32dp"
+					android:layout_height="32dp"/>
+			
+		</LinearLayout>
+		
+		
+		<android.support.v7.widget.RecyclerView
+				android:id="@+id/kind_list_recyclerView"
+				android:background="#EFF4F7"
+				android:paddingLeft="10dp"
+				android:paddingRight="10dp"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_weight="1">
+		</android.support.v7.widget.RecyclerView>
+	
+	</LinearLayout>
+
+</LinearLayout>
+
+
+
+
+

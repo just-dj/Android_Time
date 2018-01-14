@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+	<dbname value="record"></dbname>
+	
+	<version value="19"></version>
+	
+	<list>
+		<mapping class="top.justdj.myapplication.model.Article"></mapping>
+		<mapping class="top.justdj.myapplication.model.Kind"></mapping>
+		<mapping class="top.justdj.myapplication.model.User"></mapping>
+		<mapping class="top.justdj.myapplication.model.PublicArticle"></mapping>
+	</list>
+</litepal>

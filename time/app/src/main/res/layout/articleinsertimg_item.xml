@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_marginRight="5dp"
+				android:layout_width="81dp"
+				android:layout_height="144dp">
+	
+	<ImageView
+			android:id="@+id/selectImg"
+			android:layout_centerInParent="true"
+			android:scaleType="centerCrop"
+			android:layout_width="81dp"
+			android:layout_height="144dp"/>
+	
+	<ImageView
+			android:layout_alignParentTop="true"
+			android:layout_alignParentRight="true"
+			android:id="@+id/delSelectImg"
+			android:background="@drawable/del"
+			android:scaleType="centerCrop"
+			android:layout_marginRight="2dp"
+			android:layout_marginTop="2dp"
+			android:layout_width="20dp"
+			android:layout_height="20dp"/>
+	
+</RelativeLayout>

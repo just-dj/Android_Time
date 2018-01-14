@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:background="@color/colorPrimaryDark"
+		android:fitsSystemWindows="true"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+	
+	<android.support.v7.widget.Toolbar
+			android:id="@+id/toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="35dp"
+			android:background="?attr/colorPrimaryDark"
+			android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+			app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+			android:weightSum="1"
+			app:contentInsetStart="0dp">
+		
+		<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:paddingLeft="10dp"
+				android:paddingRight="10dp">
+			
+			<TextView
+					android:id="@+id/modifyInfo_return"
+					android:text="取消"
+					android:textColor="@color/white"
+					android:layout_width="wrap_content"
+					android:layout_height="20dp"
+					android:layout_alignParentLeft="true"
+					android:layout_centerInParent="true"/>
+			
+			<TextView
+					android:id="@+id/modifyInfo_save"
+					android:text="保存"
+					android:textColor="@color/white"
+					android:layout_width="wrap_content"
+					android:layout_height="20dp"
+					android:layout_alignParentRight="true"
+					android:layout_centerInParent="true"/>
+		
+		</RelativeLayout>
+	
+	</android.support.v7.widget.Toolbar>
+	
+	<LinearLayout
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			xmlns:app="http://schemas.android.com/apk/res-auto"
+			android:background="@color/mainBg"
+			android:orientation="vertical"
+			android:layout_gravity="center|top"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+			
+			<TextView
+					android:gravity="left|bottom"
+					android:text="昵称"
+					android:paddingLeft="8dp"
+					android:paddingRight="8dp"
+					android:layout_width="wrap_content"
+					android:layout_height="40dp"/>
+		
+			<EditText
+					android:id="@+id/modifyInfo_name"
+					android:textCursorDrawable="@drawable/color_cursor"
+					android:paddingLeft="8dp"
+					android:paddingRight="8dp"
+					android:textSize="19dp"
+					android:gravity="center|left"
+					android:background="@color/white"
+					android:layout_gravity="center"
+					android:maxLines="1"
+					android:maxLength="10"
+					android:layout_width="match_parent"
+					android:layout_height="40dp"/>
+		
+		<TextView
+				android:gravity="left|bottom"
+				android:text="个性签名"
+				android:paddingLeft="8dp"
+				android:paddingRight="8dp"
+				android:layout_width="wrap_content"
+				android:layout_height="40dp"/>
+		
+		<EditText
+				android:id="@+id/modifyInfo_sign"
+				android:textCursorDrawable="@drawable/color_cursor"
+				android:paddingLeft="8dp"
+				android:paddingRight="8dp"
+				android:paddingTop="8dp"
+				android:paddingBottom="8dp"
+				android:textSize="19dp"
+				android:gravity="top|left"
+				android:background="@color/white"
+				android:layout_gravity="center"
+				android:maxLines="1"
+				android:maxLength="50"
+				android:layout_width="match_parent"
+				android:layout_height="200dp"/>
+	
+	</LinearLayout>
+
+</LinearLayout>
+
+
+
+
+

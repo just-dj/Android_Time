@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@color/colorPrimaryDark"
+	android:fitsSystemWindows="true"
+	android:id="@+id/main_container"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	
+	<FrameLayout
+			android:id="@+id/main_layout"
+			android:layout_weight="1"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+	
+	</FrameLayout>
+	
+	<View
+			android:layout_width="match_parent"
+			android:layout_height="0.5dip"
+			android:background="#bbb" />
+	
+	<RelativeLayout
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			android:paddingTop="3dp"
+			android:background="@color/white"
+			android:paddingLeft="35dp"
+			android:paddingRight="35dp"
+			android:minHeight="30dp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+		
+		<LinearLayout
+				android:id="@+id/jour"
+				android:layout_alignParentLeft="true"
+				android:layout_centerInParent="true"
+				android:orientation="vertical"
+				android:gravity="center"
+				android:layout_width="100dp"
+				android:layout_height="40dp">
+			<ImageView
+					android:background="@drawable/jour"
+					android:layout_width="30dp"
+					android:layout_height="30dp"/>
+			<TextView
+					android:text="日记"
+					android:textSize="8dp"
+					android:textColor="@color/colorPrimaryDark"
+					android:gravity="center"
+					android:layout_width="30dp"
+					android:layout_height="10dp"/>
+		</LinearLayout>
+		
+		<LinearLayout
+				android:id="@+id/passing"
+				android:layout_centerInParent="true"
+				android:orientation="vertical"
+				android:gravity="center"
+				android:layout_width="100dp"
+				android:layout_height="40dp">
+			<ImageView
+					android:background="@drawable/pass"
+					android:layout_width="30dp"
+					android:layout_height="30dp"/>
+			<TextView
+					android:text="过客"
+					android:textColor="@color/colorPrimaryDark"
+					android:gravity="center"
+					android:textSize="8dp"
+					android:layout_width="30dp"
+					android:layout_height="10dp"/>
+		</LinearLayout>
+		
+		<LinearLayout
+				android:id="@+id/me"
+				android:layout_alignParentRight="true"
+				android:layout_centerInParent="true"
+				android:orientation="vertical"
+				android:gravity="center"
+				android:layout_width="100dp"
+				android:layout_height="40dp">
+			<ImageView
+					android:background="@drawable/me"
+					android:layout_width="30dp"
+					android:layout_height="30dp"/>
+			<TextView
+					android:text="我的"
+					android:textColor="@color/colorPrimaryDark"
+					android:textSize="8dp"
+					android:gravity="center"
+					android:layout_width="30dp"
+					android:layout_height="10dp"/>
+		</LinearLayout>
+	
+	
+	
+	</RelativeLayout>
+	
+</LinearLayout>
+	
+
+
+
+

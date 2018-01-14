@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+		android:id="@+id/container"
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:fitsSystemWindows="true"
+		android:orientation="vertical">
+	
+	<android.support.v7.widget.Toolbar
+			android:id="@+id/toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="35dp"
+			android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+			app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+			android:weightSum="1"
+			app:contentInsetStart="0dp">
+		
+		<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:paddingLeft="10dp"
+				android:paddingRight="10dp">
+			
+			
+			<LinearLayout
+					android:id="@+id/articleDetail_return"
+					android:orientation="horizontal"
+					android:gravity="center"
+					android:layout_alignParentLeft="true"
+					android:layout_centerInParent="true"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent">
+				
+				<ImageView
+						android:gravity="center"
+						android:background="@drawable/articledatile_left"
+						android:layout_width="20dp"
+						android:layout_height="20dp"/>
+				
+				<TextView
+						android:layout_marginLeft="5dp"
+						android:text="返回"
+						android:gravity="center"
+						android:textColor="@color/colorPrimaryDark"
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"/>
+				
+			</LinearLayout>
+			
+			
+			
+			<TextView
+					android:gravity="center"
+					android:id="@+id/articleDetail_kind"
+					android:layout_width="150dp"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:textColor="@color/colorPrimaryDark"
+					android:layout_centerInParent="true"
+					android:maxLines="1"
+					android:maxEms="10"
+					android:text="全部"
+					android:textSize="15dp"/>
+			
+			<LinearLayout
+					android:orientation="horizontal"
+					android:gravity="center|right"
+					android:layout_marginRight="8dp"
+					android:layout_alignParentRight="true"
+					android:layout_centerInParent="true"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent">
+				
+				<ImageView
+						android:id="@+id/articleDetail_del"
+						android:background="@drawable/articledatile_del"
+						android:layout_width="20dp"
+						android:layout_height="20dp"/>
+				
+			</LinearLayout>
+		
+		</RelativeLayout>
+	
+	</android.support.v7.widget.Toolbar>
+	
+	<View
+			android:layout_width="match_parent"
+			android:layout_height="0.5dip"
+			android:background="#bbb" />
+	
+	<LinearLayout
+			android:gravity="bottom|center"
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+		
+		<!--一些可选择信息-->
+		<LinearLayout
+				android:paddingLeft="8dp"
+				android:paddingTop="5dp"
+				android:paddingBottom="5dp"
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+			
+			<LinearLayout
+					android:gravity="left|center"
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="24dp">
+				
+				<TextView
+						android:id="@+id/articleDetail_year"
+						android:gravity="center|bottom"
+						android:textColor="@color/colorPrimaryDark"
+						android:textSize="18dp"
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"/>
+				
+				<TextView
+						android:id="@+id/articleDetail_hour"
+						android:gravity="center|bottom"
+						android:layout_marginLeft="8dp"
+						android:layout_marginRight="8dp"
+						android:textColor="@color/colorPrimaryDark"
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"/>
+				
+				<TextView
+						android:id="@+id/articleDetail_week"
+						android:gravity="center|bottom"
+						android:layout_marginRight="8dp"
+						android:textColor="@color/colorPrimaryDark"
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"/>
+				
+				<ImageView
+						android:id="@+id/articleDetail_weather"
+						android:background="@drawable/weather1"
+						android:layout_width="20dp"
+						android:layout_height="20dp"/>
+				
+			</LinearLayout>
+			
+			<LinearLayout
+					android:layout_marginTop="5dp"
+					android:orientation="horizontal"
+					android:gravity="center|left"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+				
+				<ImageView
+						android:layout_marginRight="8dp"
+						android:background="@drawable/position"
+						android:layout_width="20dp"
+						android:layout_height="20dp"/>
+				
+				<TextView
+						android:id="@+id/articleDetail_position"
+						android:gravity="center|left"
+						android:textColor="@color/colorPrimaryDark"
+						android:layout_weight="1"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"/>
+				
+			</LinearLayout>
+			
+		</LinearLayout>
+		
+		<View
+				android:layout_width="match_parent"
+				android:layout_height="0.5dip"
+				android:background="#bbb" />
+		
+		<LinearLayout
+				android:orientation="vertical"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+			
+			<!--文章内容-->
+			<TextView
+					android:id="@+id/articleDetail_content"
+					android:maxLines = "1000"
+					android:scrollbars = "vertical"
+					android:minHeight="100dp"
+					android:paddingTop="10dp"
+					android:gravity="left|top"
+					android:paddingLeft="8dp"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"/>
+			
+			<android.support.v7.widget.RecyclerView
+					android:padding="8dp"
+					android:id="@+id/articleDetail_insertImg"
+					android:layout_weight="1"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+			
+			</android.support.v7.widget.RecyclerView>
+			
+			<!--左右跳转按钮-->
+			<LinearLayout
+					android:layout_marginBottom="10dp"
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+				
+				<LinearLayout
+						android:orientation="vertical"
+						android:gravity="center|right"
+						android:paddingRight="70dp"
+						android:layout_weight="1"
+						android:layout_width="match_parent"
+						android:layout_height="30dp">
+					
+					<ImageView
+							android:background="@drawable/article_left"
+							android:id="@+id/article_go_left"
+							android:layout_width="30dp"
+							android:layout_height="30dp"/>
+				
+				</LinearLayout>
+				
+				<LinearLayout
+						android:gravity="center|left"
+						android:paddingLeft="70dp"
+						android:orientation="horizontal"
+						android:layout_weight="1"
+						android:layout_width="match_parent"
+						android:layout_height="30dp">
+					
+					<ImageView
+							android:background="@drawable/article_right"
+							android:id="@+id/article_go_right"
+							android:layout_width="30dp"
+							android:layout_height="30dp"/>
+				
+				</LinearLayout>
+			
+			</LinearLayout>
+		
+		</LinearLayout>
+		
+		</LinearLayout>
+
+</LinearLayout>
+
+
+
+
+

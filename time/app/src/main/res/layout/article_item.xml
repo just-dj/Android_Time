@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  xmlns:app="http://schemas.android.com/apk/res-auto"
+			  android:orientation="horizontal"
+			  android:background="#EFF4F7"
+			  android:paddingRight="7dp"
+			  android:layout_width="match_parent"
+			  android:layout_height="wrap_content">
+	<android.support.percent.PercentFrameLayout
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			xmlns:app="http://schemas.android.com/apk/res-auto"
+			android:layout_marginTop="7dp"
+			android:background="#EFF4F7"
+			android:layout_width="45dp"
+			android:layout_height="45dp">
+		<TextView
+				android:id="@+id/date_day"
+				android:textColor="@color/colorPrimaryDark"
+				android:textSize="13dp"
+				android:paddingRight="1dp"
+				android:layout_gravity="left|top"
+				android:gravity="right|bottom"
+				app:layout_widthPercent="50%"
+				app:layout_heightPercent="50%"/>
+		
+		<TextView
+				android:id="@+id/date_week"
+				android:textColor="@color/colorPrimaryDark"
+				android:textSize="8dp"
+				android:paddingLeft="1dp"
+				android:gravity="left|bottom"
+				android:layout_gravity="right|top"
+				app:layout_widthPercent="50%"
+				app:layout_heightPercent="50%"/>
+		
+		<TextView
+				android:id="@+id/date_year"
+				android:textColor="@color/colorPrimaryDark"
+				android:textSize="8dp"
+				android:gravity="top|center"
+				android:layout_gravity="bottom"
+				app:layout_widthPercent="100%"
+				app:layout_heightPercent="50%"/>
+	</android.support.percent.PercentFrameLayout>
+	
+	<ImageView
+			android:layout_width="10dp"
+			android:layout_height="78dp"
+			android:background="@drawable/devider"
+			android:id="@+id/imageView"/>
+	
+	<RelativeLayout
+			android:paddingTop="8dp"
+			android:paddingBottom="2dp"
+			android:layout_width="match_parent"
+			android:layout_height="78dp">
+		<TextView
+				android:id="@+id/article_content"
+				android:textColor="@color/colorPrimaryDark"
+				android:textSize="12dp"
+				android:layout_width="match_parent"
+				android:layout_height="72dp"
+				android:ellipsize="end"
+				android:background="#ffffff"
+				android:gravity="top|left"
+				android:paddingRight="3dp"
+				android:paddingLeft="8dp"
+				android:paddingTop="6dp"
+				android:paddingBottom="18dp"
+				android:maxLines="3"
+				android:layout_alignParentRight="true"
+				android:layout_centerInParent="true"/>
+		
+		<LinearLayout
+				android:layout_alignParentBottom="true"
+				android:layout_alignParentLeft="true"
+				android:layout_marginBottom="4dp"
+				android:paddingLeft="8dp"
+				android:paddingBottom="4dp"
+				android:gravity="center|left"
+				android:layout_width="230dp"
+				android:layout_height="16dp">
+			
+			<TextView
+					android:id="@+id/date_hour"
+					android:textColor="@color/colorPrimaryDark"
+					android:textSize="9dp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"/>
+			
+			<TextView
+					android:id="@+id/article_position"
+					android:textColor="@color/colorPrimaryDark"
+					android:paddingLeft="8dp"
+					android:textSize="9dp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"/>
+		</LinearLayout>
+		
+		<ImageView
+				android:id="@+id/article_img"
+				android:scaleType="centerCrop"
+				android:layout_marginRight="8dp"
+				android:layout_width="52dp"
+				android:layout_height="52dp"
+				android:layout_alignParentRight="true"
+				android:layout_centerInParent="true"/>
+	</RelativeLayout>
+	
+	
+</LinearLayout>

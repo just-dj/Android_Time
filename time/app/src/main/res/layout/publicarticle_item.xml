@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:id="@+id/publicArticleContainer"
+			  android:orientation="vertical"
+			  android:background="@drawable/publicarticleitemborder1"
+			  android:layout_marginTop="3dp"
+			  android:layout_marginLeft="3dp"
+			  android:layout_marginRight="3dp"
+			  android:paddingTop="10dp"
+			  android:paddingLeft="14dp"
+			  android:paddingRight="3dp"
+			  android:paddingBottom="6dp"
+			  android:layout_width="match_parent"
+			  android:layout_height="wrap_content">
+	
+	<LinearLayout
+			android:gravity="center|left"
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+		
+		<com.liji.circleimageview.CircleImageView
+				android:id="@+id/publicArticle_headImg"
+				android:src="@drawable/defaulthead"
+				android:layout_width="28dp"
+				android:layout_height="28dp"/>
+		
+		<TextView
+				android:id="@+id/publicArticle_name"
+				android:text="石头"
+				android:textSize="13dp"
+				android:layout_marginLeft="8dp"
+				android:textColor="@color/white"
+				android:gravity="center|left"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"/>
+		
+		
+	</LinearLayout>
+	
+	<View
+			android:background="@color/mainBg"
+			android:layout_marginTop="5dp"
+			android:layout_marginBottom="8dp"
+			android:layout_marginRight="10dp"
+			android:alpha="0.2"
+			android:layout_width="match_parent"
+			android:layout_height="1dp"/>
+	
+	<TextView
+			android:id="@+id/publicArticle_content"
+			android:lineSpacingExtra="4dp"
+			android:paddingLeft="18dp"
+			android:paddingRight="18dp"
+			android:textColor="@color/white"
+			android:textSize="13dp"
+			android:maxLines="3"
+			android:ellipsize="end"
+			android:gravity="center|left"
+			android:layout_width="match_parent"
+			android:layout_height="60dp"/>
+	
+	
+	<RelativeLayout
+			android:paddingRight="7dp"
+			android:layout_width="match_parent"
+			android:layout_height="30dp">
+		
+		<TextView
+				android:id="@+id/publicArticle_time"
+				android:textColor="@color/white"
+				android:layout_centerInParent="true"
+				android:layout_alignParentLeft="true"
+				android:textSize="11dp"
+				android:text="小时"
+				android:gravity="center|left"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"/>
+		
+		<LinearLayout
+				android:gravity="center"
+				android:layout_centerInParent="true"
+				android:layout_alignParentRight="true"
+				android:orientation="horizontal"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent">
+			
+			<TextView
+					android:id="@+id/publicArticle_likeNum"
+					android:textColor="@color/white"
+					android:gravity="center|left"
+					android:text="100"
+					android:textSize="11dp"
+					android:layout_marginRight="3dp"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"/>
+			
+			<ImageView
+					android:id="@+id/publicArticle_like"
+					android:background="@drawable/like"
+					android:layout_width="18dp"
+					android:layout_height="18dp"/>
+			
+		</LinearLayout>
+		
+	</RelativeLayout>
+	
+	
+</LinearLayout>
